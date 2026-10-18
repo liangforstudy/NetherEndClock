@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Clock works in the Nether & End (shows Overworld time)",
+    "min_format": 97,
+    "max_format": 97
+  }
+}
