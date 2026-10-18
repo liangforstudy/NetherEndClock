@@ -4,6 +4,15 @@ Makes the **clock** item work in the Nether and the End for Minecraft Java Editi
 
 Instead of spinning randomly, the clock shows the **Overworld's time**, live. It keeps moving while you're away, so you can tell when it's getting dark back home.
 
+## Screenshots
+
+Holding the clock in each dimension, with `/time of minecraft:overworld query minecraft:day` run about a minute apart. The Overworld's time keeps moving and the dial follows it.
+
+| | Before | About a minute later |
+| --- | --- | --- |
+| **Nether** | ![Clock in the Nether, Overworld day at 21450 ticks](screenshots/nether-1.png) | ![Clock in the Nether, Overworld day at 22945 ticks](screenshots/nether-2.png) |
+| **End** | ![Clock in the End, Overworld day at 470 ticks](screenshots/end-1.png) | ![Clock in the End, Overworld day at 1920 ticks](screenshots/end-2.png) |
+
 ## What's included
 
 You need **both** packs:
