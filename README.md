@@ -44,8 +44,24 @@ Clocks in custom or modded dimensions still spin as normal.
 
 ## Compatibility
 
-- Minecraft Java **26.3** (data pack format 121, resource pack format 97.1).
-- Should keep working on later versions while the clock and timeline formats stay the same; you may see an "incompatible" warning you can click through.
+| Minecraft Java | Status |
+| --- | --- |
+| **26.3** | ✅ Tested |
+| **26.1 – 26.2.x** | ✅ Should work (untested). The game files this relies on are identical to 26.3's |
+| **26.4 snapshots** | ✅ Should work (the files are still identical as of 26.4 Snapshot 4); you may need to click through an "incompatible" warning |
+| **1.21.11** | ❌ Not supported. Timelines existed, but they weren't tied to the Overworld clock yet, so the trick doesn't carry over |
+| **1.21.10 and older** | ❌ Not possible. Timelines and environment attributes don't exist yet, and the clock can't be changed with a data pack |
+
+The packs need three things the game added in **26.1**: world clocks, timelines that run on a chosen clock (`minecraft:overworld`), and a clock dial that reads the `minecraft:visual/sun_angle` environment attribute. Pack formats cover data packs 101–121 and resource packs 84–97.
+
+### If it breaks in a newer version
+
+A future update could rename or change any of those parts. Signs it's broken:
+
+- The clock spins randomly or points straight up (noon) in the Nether or End.
+- The game log or `/reload` shows an error mentioning `nether_end_clock`.
+
+If that happens, please [open an issue](../../issues) with your Minecraft version (and the error, if there is one), and I'll update the packs.
 
 ## Tip
 
